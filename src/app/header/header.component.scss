@@ -1,0 +1,34 @@
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 100px;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    img{
+        height: 50px;
+        cursor: pointer;
+    }
+    
+    a{
+        color: white;
+
+        &:hover {
+            color:#FA2759;
+        }
+    }
+}
+
+.header-text{
+    margin-left: 80px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
