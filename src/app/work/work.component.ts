@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
+
+  addBlack(){
+    
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,27 +1,26 @@
 .work-container{
-    height: 100vh;
-    background-color: rgba(0,0,0,0.9);
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 105px;
 }
 
 h2{
     font-size: 36px;
     color: white;
     font-weight: 400;
-    left: 47%;
-    position: absolute;
 }
 
 .button-container{
     display: flex;
+    padding-right: 24px;
 
 }
 
 button{
-    background-color: #000000;
+    background-color: black;
     border: 2px solid #FA2759;
     cursor: pointer;
     font-size: 22px;
@@ -44,11 +43,17 @@ button{
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    width: 970px;
+    max-width: 970px;
+    padding-right: 40px;
 }
 
 .projet-img{
-    height: 250px;
+    height: 300px;
     margin-left: 40px;
     margin-top: 40px;
+    width: 445px;
+}
+
+.title-container{
+
 }

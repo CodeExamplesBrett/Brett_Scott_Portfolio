@@ -1,0 +1,29 @@
+<div id="contact" class="contact-container">
+    <h1>
+        Contact me.
+    </h1>
+
+    <p>
+        Get in touch via the form below, or by emailing brettsamscott@gmail.com
+    </p>
+
+    <form (submit)="sendMail()" #myForm>
+        <label for="Name" class="form-label">Name</label>
+        <input class="input-field" type="text" name="name" #nameField placeholder="Enter your name">
+        <label for="Name" class="form-label">Email address</label>
+        <input class="input-field" type="text" name="email" placeholder="Enter your email address">
+
+        <label for="Name" class="form-label">Message</label>
+        <textarea class="textarea-field" type="text" name="message" #messageField placeholder="Enter your message"></textarea>
+
+        <div class="send-button-div">
+            <button #sendButton>Send</button>
+        </div>
+        
+
+
+    </form>
+    
+
+
+</div>

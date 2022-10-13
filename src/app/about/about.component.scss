@@ -1,0 +1,156 @@
+.about-container{
+    min-height: 100vh;
+    background-color: #1A1A1A;
+    display: flex;
+    
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: 64px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        font-weight: 600;
+        color: white;
+    }
+
+    
+}
+
+.about-content-top{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    border-bottom: 1px solid #2DFCD8;
+
+    img{
+        height: 300px;
+        border-radius: 50%;
+        margin-right: 200px;
+    }
+}
+
+.about-content-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-bottom-card{
+    width: 260px;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+h2{
+    color: white;
+    font-size: 50px;
+}
+
+h3{
+    color: white;
+    font-size: 20px;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+}
+
+.journey-icon{
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+    background-color: #2DFCD8;
+    border-radius: 50%;
+}
+
+.heading{
+    margin-bottom: 150px;
+}
+
+.intro-text{
+
+    
+    button{
+        background-color: #000000;
+        border: 2px solid #2DFCD8;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 500;
+        justify-content: center;
+        padding-left: 130px;
+        padding-right: 130px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: #2DFCD8;
+        border-color: #2DFCD8;
+
+        &:hover {
+            background-color: #2DFCD8;
+            color: white;
+        }
+    }
+
+}
+
+.intro-content{
+    padding-top: 220px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+mark.red{
+    color: #FA2759;
+    background: none;
+}
+
+mark.green{
+    color: #2DFCD8;
+    background: none;
+}
+
+.down-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.down-arrow{
+    height: 73px !important;
+    width: 50;
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 1360px) {
+
+    .about-content-top{
+        display: flex;
+        flex-direction: column-reverse;
+
+        img{
+            height: 270px;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+    }
+
+    .about-me-text{
+        margin-bottom: 40px;
+    }
+}
