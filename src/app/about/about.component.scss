@@ -7,6 +7,7 @@
     padding-right: 200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     h1{
         font-size: 64px;
@@ -128,20 +129,14 @@ mark.green{
   width: 50%;
 }
 
-.down-arrow{
-    height: 73px !important;
-    width: 50;
-    position: absolute;
-    bottom: 27px;
-    left: 50%;
-    cursor: pointer;
-}
+
 
 @media (max-width: 1360px) {
 
     .about-content-top{
         display: flex;
         flex-direction: column-reverse;
+        text-align: center;
 
         img{
             height: 270px;
@@ -153,4 +148,83 @@ mark.green{
     .about-me-text{
         margin-bottom: 40px;
     }
+}
+
+@media (max-width: 970px) {
+
+    .about-content-top{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        img{
+            height: 270px;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+    }
+
+    .about-bottom-card{
+        padding: 10px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-container{
+        min-height: 100vh;
+        background-color: #1A1A1A;
+        display: flex;
+        
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+    
+        h2{
+            font-size: 42px;
+        }
+    
+        
+    }
+
+    .about-content-bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    @media (max-width: 375px) {
+
+        .about-content-top{
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            padding-top: 20px;
+    
+            img{
+                height: 200px;
+                border-radius: 50%;
+                margin-right: 0;
+            }
+        }
+
+        h2{
+            font-size: 26px !important;
+            margin-top: 0;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        h3{
+            font-size: 16px;
+        }
+
+    }
+
+
 }
