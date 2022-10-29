@@ -1,26 +1,40 @@
-
-
-
 <div id="work" class="work-container">
     <div class="title-container">
         <h2>MY Work</h2>
     </div>
-    
+
 
     <div class="button-container">
-        <button>All</button>
-        <button>Angular</button>
-        <button>Java script</button>
+        <button (click)="displayProjects('all')"
+            [ngStyle]="{'background-color': projectType.all ? '#FA2759' : 'black'} ">All</button>
+        <button (click)="displayProjects('angular')"
+            [ngStyle]="{'background-color': projectType.angular ? '#FA2759' : 'black'} ">Angular</button>
+        <button (click)="displayProjects('javascript')"
+            [ngStyle]="{'background-color': projectType.javascript ? '#FA2759' : 'black'} ">Java script</button>
     </div>
 
     <div class="project-container">
-        <img data-aos="zoom-in" data-aos-duration="3000" class="projet-img" src="assets/img/work/El-Pollo-Loco.png">
-        <img data-aos="zoom-in" data-aos-duration="3000" class="projet-img" src="assets/img/work/El-Pollo-Loco.png">
-        <img data-aos="zoom-in" data-aos-duration="3000" class="projet-img" src="assets/img/work/El-Pollo-Loco.png">
-        <img data-aos="zoom-in" data-aos-duration="3000" class="projet-img" src="assets/img/work/El-Pollo-Loco.png">
+        <div *ngFor="let p of filteredPros" data-aos="zoom-in" data-aos-duration="3000">
+            <div>
+                <img class="projet-img" src="{{p.image}}">
 
-    
+            </div>
+            <div class="on-hover">
+                <h2 class="title-text">{{p.title}}</h2>
+                <h3 class="description">{{p.description}}</h3>
+                <div class="project-button-container">
+                    <a href="{{p.projectLink}}" target='_blank'>
+                        <button>
+                            To Project
+                        </button>
+                    </a>
+                    <a href="{{p.githubLink}}" target='_blank'>
+                        <button>
+                            Github
+                        </button>
+                    </a>
 
+                </div>
+            </div>
+        </div>
     </div>
-
-</div>

@@ -13,6 +13,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
+import { HomeComponent } from './home/home.component';
+import { LegalComponent } from './legal/legal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ImprintComponent } from './imprint/imprint.component';
     WorkComponent,
     AboutComponent,
     ContactFormComponent,
-    ImprintComponent
+    ImprintComponent,
+    HomeComponent,
+    LegalComponent
   ],
   imports: [
     BrowserModule,
