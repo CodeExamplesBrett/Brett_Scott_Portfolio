@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     h1{
         margin-top: 20px !important;
@@ -29,6 +30,7 @@
             font-size: 22px;
             font-weight: 500;
             margin-top: 30px;
+            margin-bottom: 20px;
             padding-left: 40px;
             padding-right: 40px;
             padding-top: 20px;
@@ -102,6 +104,84 @@ textarea{
     resize: none;  
 }
 
+.black-span{
+    color: black;
+    font-size: 14px;
+}
+
+.white-span{
+    color: white;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.dnone{
+    display: none;
+}
+
+.warn-dnone {
+    display: none !important;
+}
+
+.email-warning{
+    display: flex;
+    align-items: center;
+    
+}
+
+.warn-image{
+    height: 40px;
+}
+
+#email-sent{
+    color: black;
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    top: 40%;
+    left: 34.5%;
+    padding-top: 2% !important;
+    padding: 0.5%;
+    background-color: white;
+    border: solid 1px #e9ecec;
+    text-align: center;
+    box-shadow: -0.5px -0.5px 2px 2px #0ff;
+    
+    z-index: 99;
+}
+
+.fadeIn{
+    animation: fadeInAnimation 1,2s ease-in;
+}
+
+@keyframes fadeInAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.fadeOut{
+    animation: fadeInAnimation 6s ease-out;
+}
+
+@keyframes fadeInAnimation{
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+}
+
 @media (max-width: 1000px) {
 
     .contact-container{
@@ -159,6 +239,7 @@ textarea{
                 font-size: 18px;
                 font-weight: 500;
                 margin-top: 30px;
+                margin-bottom: 20px;
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-top: 10px;
@@ -234,6 +315,7 @@ textarea{
                 font-size: 18px;
                 font-weight: 500;
                 margin-top: 30px;
+                margin-bottom: 20px;
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-top: 10px;

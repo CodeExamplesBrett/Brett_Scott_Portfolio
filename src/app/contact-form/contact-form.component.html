@@ -7,23 +7,28 @@
         Get in touch via the form below, or by emailing brettsamscott@gmail.com
     </p>
 
-    <form (submit)="sendMail()" #myForm>
+    <form (submit)="sendMail()" ngNativeValidate #myForm>
         <label for="Name" class="form-label">Name</label>
-        <input class="input-field" type="text" name="name" #nameField placeholder="Enter your name">
+        <input required class="input-field" type="text" name="name" #nameField placeholder="Enter your name">
         <label for="Name" class="form-label">Email address</label>
-        <input class="input-field" type="text" name="email" placeholder="Enter your email address">
+        <input required class="input-field" type="text" name="email" #emailField placeholder="Enter your email address">
+        <div [class.warn-dnone] = "emailValid" class="warn-dnone email-warning">
+            <img class="warn-image" src="/assets/img/Exclaimation.png">
+            <span class="white-span">Please provide a valid email address!</span>
+        </div>
 
         <label for="Name" class="form-label">Message</label>
-        <textarea class="textarea-field" type="text" name="message" #messageField placeholder="Enter your message"></textarea>
+        <textarea required class="textarea-field" type="text" name="message" #messageField placeholder="Enter your message"></textarea>
 
         <div class="send-button-div">
             <button #sendButton>Send</button>
         </div>
-        
-
-
-    </form>
     
+    </form>
 
+    <!--      -->
+        <div [class.dnone] = "emailSent" [class.fadeOut] = "fadeOut" id="email-sent" class="fadeIn" >
+            <span class="black-span">Thanks for getting in contact! I'll get back to you as soon as possible</span>
+        </div>
 
 </div>

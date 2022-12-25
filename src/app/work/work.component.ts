@@ -131,7 +131,7 @@ export class MyWorkComponent implements OnInit {
       image: 'assets/img/laptop/laptop_Pollo.png',
       category: 'javascript',
       githubLink: 'https://github.com/CodeExamplesBrett/EL_Pollo_Loco_2',
-      projectLink: 'https://@brett-scott.developerakademie.net/Modul_11/El_Pollo_Loco/index.html'
+      projectLink: 'http://@brett--scott.com/El Pollo Loco/index.html'
     },
     {
       title: 'Join',
@@ -139,7 +139,7 @@ export class MyWorkComponent implements OnInit {
       image: 'assets/img/laptop/laptop_Join.png',
       category: 'javascript',
       githubLink: 'https://github.com/',
-      projectLink: '#'
+      projectLink: 'http://@brett--scott.com/Join/addtask.html'
     },
     {
       title: 'Pokedex',
@@ -147,7 +147,7 @@ export class MyWorkComponent implements OnInit {
       image: 'assets/img/laptop/laptop_Poke.png',
       category: 'javascript',
       githubLink: 'https://github.com/CodeExamplesBrett/Pokedex_Scroll_simple',
-      projectLink: 'https://brett-scott.developerakademie.net/Modul_9/Pokedex_Scroll_simple/index.html'
+      projectLink: 'http://brett--scott.com/Pokedex/index.html'
     },
     {
       title: 'My Portfolio Site',
@@ -155,7 +155,7 @@ export class MyWorkComponent implements OnInit {
       image: 'assets/img/laptop/laptop_Portfolio.png',
       category: 'angular',
       githubLink: 'https://github.com/',
-      projectLink: '#'
+      projectLink: 'http://brett--scott.com'
     },
     {
       title: 'Ring of fire',
@@ -163,7 +163,7 @@ export class MyWorkComponent implements OnInit {
       image: 'assets/img/laptop/laptop_Fire.png',
       category: 'angular',
       githubLink: 'https://github.com/',
-      projectLink: '#'
+      projectLink: 'http://brett--scott.com/RingOfFire/index.html'
     },
   ]
 
