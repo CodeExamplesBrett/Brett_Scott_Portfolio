@@ -7,12 +7,12 @@
         Get in touch via the form below, or by emailing brettsamscott@gmail.com
     </p>
 
-    <form (submit)="sendMail()" ngNativeValidate #myForm>
+    <form (submit)="getFormData()" ngNativeValidate #myForm>
         <label for="Name" class="form-label">Name</label>
         <input required class="input-field" type="text" name="name" #nameField placeholder="Enter your name">
         <label for="Name" class="form-label">Email address</label>
         <input required class="input-field" type="text" name="email" #emailField placeholder="Enter your email address">
-        <div [class.warn-dnone] = "emailValid" class="warn-dnone email-warning">
+        <div [class.dnone] = "emailValid" class="dnone email-warning">
             <img class="warn-image" src="/assets/img/Exclaimation.png">
             <span class="white-span">Please provide a valid email address!</span>
         </div>
@@ -26,7 +26,6 @@
     
     </form>
 
-    <!--      -->
         <div [class.dnone] = "emailSent" [class.fadeOut] = "fadeOut" id="email-sent" class="fadeIn" >
             <span class="black-span">Thanks for getting in contact! I'll get back to you as soon as possible</span>
         </div>
