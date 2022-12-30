@@ -61,7 +61,7 @@ export class ContactFormComponent implements OnInit {
   async sendMail(nameField, messageField, sendButton, emailField, fd){
         this.emailValid = true;
         // senden
-        await fetch('http://brett--scott.com/send_mail/send_mail.php', 
+        await fetch('https://brett--scott.com/send_mail/send_mail.php', 
         {
           method: 'POST',
           body: fd
