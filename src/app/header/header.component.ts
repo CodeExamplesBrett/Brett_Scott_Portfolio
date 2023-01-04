@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { window } from 'rxjs';
+import { Router } from '@angular/router';
+import { ViewContainerRef, TemplateRef } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router, private viewContainerRef: ViewContainerRef) { }
+  menuToggle = true;
 
-  ngOnInit(): void {
+  
+ 
+  ngOnInit(): void {}
+
+  showDropdown(){
+    this.menuToggle != this.menuToggle;
   }
+
+  responsiveLink(link: string) {
+    this.router.navigateByUrl(link);
+    this.menuToggle = false;
+    console.log('state', this.menuToggle)
+  }
+
 
 }

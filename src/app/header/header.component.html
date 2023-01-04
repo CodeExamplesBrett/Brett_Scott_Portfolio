@@ -1,9 +1,24 @@
 <header>
-    <img routerLink="" src="assets/img/B-symbol-dark-gray.png">
-    <div class="header-text">
-        <a href="#contact" class="header-text">CONTACT</a>
-        <a href="#about" class="header-text">ABOUT</a>
-        <a href="#work" class="header-text">PORTFOLIO</a>
+    
+    <!-- full screen -->
+    <div class="full-srceen-head">
+        <img routerLink="" src="assets/img/B-symbol-dark-gray.png">
+        <div class="header-text">
+            <a href="#contact" class="header-text">CONTACT</a>
+            <a href="#about" class="header-text">ABOUT</a>
+            <a href="#work" class="header-text">PORTFOLIO</a>
+        </div>
     </div>
-</header>
 
+    <img (click)="showDropdown()" class="hamburger-img" src="assets/img/hamburger.png">
+
+    <!-- responsive -->
+    <!-- class="d-none" [ngClass]="menuToggle ? 'drop-down' : 'd-none'" -->
+
+    <div class="drop-down">
+        <a href="#contact" (click)="responsiveLink('')">CONTACT</a>
+        <a href="#about" (click)="responsiveLink('')">ABOUT</a>
+        <a href="#work" (click)="responsiveLink('')">PORTFOLIO</a>
+    </div>
+
+</header>

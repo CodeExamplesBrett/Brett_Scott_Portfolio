@@ -38,6 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 .about-bottom-card{
@@ -129,7 +130,11 @@ mark.green{
   width: 50%;
 }
 
-
+@media (max-width: 1550px){
+    .about-content-bottom{
+        width: 630px;
+    }
+}
 
 @media (max-width: 1360px) {
 
@@ -149,6 +154,8 @@ mark.green{
         margin-bottom: 40px;
     }
 }
+
+
 
 @media (max-width: 970px) {
 
@@ -182,6 +189,8 @@ mark.green{
         padding-right: 50px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
         h2{
             font-size: 42px;
@@ -194,6 +203,7 @@ mark.green{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        width: auto;
     }
 
     @media (max-width: 375px) {
